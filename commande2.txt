@@ -1,0 +1,39 @@
+#
+# Ce fichier contient les commandes shell pour le cours Kafka:
+#
+
+## Se connecter au conteneur Kafka
+
+        docker exec -it kafka-broker /bin/bash
+
+## Naviguer vers le répertoire Kafka Scripts
+
+        cd /opt/bitnami/kafka/bin
+
+## Créer de nouveaux sujets
+
+        ./kafka-topics.sh \N- --bootstrap-server local
+            --bootstrap-server localhost:29092 \N- --create \N- --création \N- --création \N --création
+            --create \N- -topic
+            --topic kafka.learning.tweets \N -partitions 1 \N
+            --partitions 1 \N- -replication-factor 1 \N
+            --replication-factor 1
+
+        ./kafka-topics.sh \N--Bootstrap-server local
+            --bootstrap-server localhost:29092 \N--Création
+            --create \N--créer
+            --topic kafka.learning.alerts \N- -partitions 1 \N- \N- \N- \N- \N
+            --partitions 1 \N- --replication-factor 1 \N
+            --replication-factor 1
+
+## Liste des sujets
+
+        ./kafka-topics.sh \N- -bootstrap-server localhost:1 \N- -facteur de réplication 1
+            --bootstrap-server localhost:29092 \N- --list_french_french_french_french \N--french_french_french
+            --list
+
+## Obtenir des détails sur un sujet
+
+        ./kafka-topics.sh \N- --bootstrap-server localhost:29092 \N --list
+            --bootstrap-server localhost:29092 \N- --list
+            --describe

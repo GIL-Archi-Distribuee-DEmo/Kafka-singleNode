@@ -1,0 +1,20 @@
+
+1. Assurez-vous que Docker est déjà installé dans le système,
+Si ce n'est pas le cas, installez-le à partir de https://www.docker.com/products/docker-desktop
+
+2. Si vous êtes sous Windows O/S, ouvrez une fenêtre Powershell.
+Si vous êtes sous Mac OS ou Linux, ouvrez une fenêtre Terminal.
+
+3. Naviguez jusqu'au répertoire où les fichiers de l'exercice ont été téléchargés.
+Ce répertoire contient le fichier kafka-single-node.yml.
+
+4. Exécutez la commande suivante à partir de ce répertoire
+
+        docker-compose -f kafka-single-node.yml up -d
+
+5. Vérifiez que le conteneur kafka est opérationnel
+
+        docker ps
+
+
+
